@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Article" representedClassName=".Article" syncable="YES">
+        <attribute name="articleComments" optional="YES" attributeType="String"/>
+        <attribute name="articleContent" optional="YES" attributeType="String"/>
+        <attribute name="articleCreatedOn" optional="YES" attributeType="String"/>
+        <attribute name="articleImageUrl" optional="YES" attributeType="String"/>
+        <attribute name="articleLikes" optional="YES" attributeType="String"/>
+        <attribute name="articleTitle" optional="YES" attributeType="String"/>
+        <attribute name="articleUrl" optional="YES" attributeType="String"/>
+        <relationship name="users" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="articles" inverseEntity="User"/>
+    </entity>
+    <entity name="User" representedClassName=".User" syncable="YES">
+        <attribute name="userDesignation" optional="YES" attributeType="String"/>
+        <attribute name="userImageUrl" optional="YES" attributeType="String"/>
+        <attribute name="userName" optional="YES" attributeType="String"/>
+        <relationship name="articles" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Article" inverseName="users" inverseEntity="Article"/>
+    </entity>
+    <elements>
+        <element name="Article" positionX="-136.53515625" positionY="-89.390625" width="128" height="163"/>
+        <element name="User" positionX="199.0625" positionY="54.53125" width="128" height="103"/>
+    </elements>
+</model>

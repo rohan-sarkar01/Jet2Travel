@@ -1,0 +1,13 @@
+platform :ios, '10.0'
+use_frameworks!
+project '/Users/rohan/Desktop/Projects/Jet2Travel/Jet2Travel.xcodeproj'
+
+target "Jet2Travel" do
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    pod 'Kingfisher'
+    #pod 'NVActivityIndicatorView'
+    #pod 'UIScrollView-InfiniteScroll'
+    #pod 'PullToRefreshKit'
+    #pod "SkeletonView"
+end
